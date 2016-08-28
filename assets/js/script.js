@@ -1,13 +1,13 @@
 var ctx = document.getElementById("skills");
 Chart.defaults.global.defaultFontColor = "#fff";
-Chart.defaults.global.defaultFontSize = 18;
+Chart.defaults.global.defaultFontSize = 20;
 Chart.defaults.global.defaultFontFamily = 'Roboto Condensed', "sans-serif";
 
 var data = {
     labels: ["Python", "Java", "ReactJS", "JavaScript", "Git", "JQuery", "HTML5", "CSS3", "PHP"],
     datasets: [
         {
-            label: "Skills",
+            label: "Expertise",
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -32,6 +32,7 @@ var data = {
             ],
             borderWidth: 1,
             data: [80, 80, 50, 50, 40, 60, 90, 90, 20],
+            unit: "%",
         }
     ]
 };

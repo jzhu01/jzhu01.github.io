@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--navigation section-->
-    <div class="header hidden">
+    <div class="header">
       <div class="container">
           <div class="row">
               <div class="col-md-4">
@@ -51,16 +51,16 @@
           <strong><h5>I bring ideas to life.</h5></strong>
           <div class="row">
             <div class="col-md-6">
-                <p>I'm a programmer with a penchant for all things technology. Front end development, back end development,
-                   object oriented programming - you name it, I'd love to work on it! I'm always on the hunt for a project to build, debug and improve.<p>
-                <p>The perk of being a lazy programmer? I'm all about writing efficient and comprehensive code. I hold a strong background in
-                  object oriented programming, which I have used as foundation for my venture into web development. My latest projects focus on the
-                  full stack - incorporating responsive design and mobile first methodologies.</p>
+              <p>I'm a programmer with a penchant for all things technology. Front end development, back end development,
+                 object oriented programming - you name it, I'd love to work on it! I'm always on the hunt for a project to build, debug and improve.<p>
+              <p>I have a confession to make: I'm a lazy programmer. The perks of being one? I'm all about writing efficient and comprehensive code. I hold a strong background in
+                object oriented programming, which I have used as foundation for my venture into web development. My latest projects focus on the
+                full stack - incorporating responsive design and mobile first methodologies.</p>
             </div>
             <div class="col-md-6">
               <p>Currently I'm pursuing a Computer Science major at Smith College, and plan to graduate May 2018. In my free time, I mentor
               novice developers at Codecademy and tinker with hardware on campus as a technology consultant. </p>
-              <p>If you find me away from tech, I'm usually fawning over red pandas, expanding my knowledge of recipes or delving into the crime fiction world. </p>
+              <p>If you find me away from tech, I'm usually fawning over red pandas, expanding my knowledge of recipes or delving into the crime fiction universe. </p>
             </div>
           </div>
           <div class="row" style="display:inline;">
@@ -84,29 +84,138 @@
           </div>
           <div class="row">
             <!-- Simple graph display of skills using Chart.js -->
-            <canvas class="pull-right" id="skills" width="500px" height="350px"></canvas>
+            <canvas id="skills" width="500px" height="350px"></canvas>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Codecademy</h3>
+              <h4> April 2016 - Present </h4>
+            </div>
+            <div class="col-md-9">
+              <h3>Advisor</h3>
+              <p>Currently spends around 30 hours weekly helping over 300 people from around the world in one-to-one conversations with
+                Python, Javascript, Jquery, HTML/CSS, Java and general software development questions.</p>
+              <ul>
+                <li>
+                  Works in a rotating group of 5-10 advisors each 2-4 hour shift to maximize response time and escalate problems for clients
+                </li>
+                <li>
+                  Assists clients in defining goals, reviewing coding concepts, guiding them to additional resources and debugging code
+                </li>
+                <li>
+                  Response and conversation time averages around 10-20 minutes
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <h3>KuK</h3>
+              <h4> April 2016 </h4>
+            </div>
+            <div class="col-md-9">
+              <h3>Co-Founder, Full Stack Developer</h3>
+              <p>Can you kuk? kuk is a recipe website catered towards managing dietary restrictions for people on the go.
+                Highlighted features are browse, search, calendar, profile, favorites and instant mode.</p>
+              <ul>
+                <li>
+                  Co-Founder; built product in under 4 months - won 1st place in competition with over 70 students
+                </li>
+                <li>
+                  Worked with ReactJS, HTML5/CSS, JavaScript, MongoDB, Git, AJAX, XML, HTTP for front end and back end development
+                </li>
+                <li>
+                  Developed the Instant Mode page, which allows users to search for recipes based on the ingredients in their fridge
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-3">
+                <h3>HackMate</h3>
+                <h4> January 2016 </h4>
+              </div>
+              <div class="col-md-9">
+                <h3>Co-Founder, Full Stack Developer</h3>
+                <p>HackMate is a web app designed to build teams at hackathons more efficiently. The app connects incomplete teams
+                  with engineers that have needed skill sets. HackMate is powered by Google APIs and uses Slack. </p>
+                <ul>
+                  <li>
+                    Co-founder; built MVP in three weeks in a team of 2
+                  </li>
+                  <li>
+                    Worked on UI (HTML, CSS, Jinja2, Javascript) and back end database creation (JQuery, AJAX, Google Datastore, Python)
+                  </li>
+                  <li>
+                    Ongoing project, currently integrating Slack and Google user verification
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Smith College</h3>
+              <h4>September 2015 - Present</h4>
+            </div>
+            <div class="col-md-9">
+              <h3>On-Call Technology Consultant</h3>
+              <p>Currently serves as a part-time campus-wide technology consultant for Smith's professors. Conducts weekly "tech health"
+                check-ins on 30+ classrooms, works in consultant pairs to address any on-call emergencies and educates professors on campus
+                technology infrastructure.</p>
+              <ul>
+                <li>
+                  "Tech health" classroom check-ins include examining computer operating performance, re-calibrating projectors and Extron machines, and adjusting AV systems
+                </li>
+                <li>
+                  Built strong, interdepartmental relationships to rapidly escalate and solve emergencies)
+                </li>
+                <li>
+                  Provides ongoing education to professors on best practices, even if in a tense or high-stress situation
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Want to see more of my work?</h3>
+            <a href="#" class="btn"><p>Take a look at my Resume</p></a>
+            <a href="https://github.com/jzhu01/" class="btn"><p>Check out my Github</p></a>
           </div>
       </div>
     </div>
     <!--Contact Section-->
-    <section class="section  contact" id="contact-section">
+    <section class="section contact jumbotron" id="contact-section">
     		<div class="container">
           <div class="section-title">
     			  <a name="contact"><h2>Let's Chat...</h2></a>
           </div>
           <form action="https://formspree.io/jennifer0zhu@gmail.com"
               method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <input type="submit" value="Send">
+            <div class="row">
+              <input type="text" name="name" placeholder="Full Name" id="left">
+              <input type="email" name="_replyto" placeholder="Email">
+            </div>
+            <div class="row">
+              <textarea
+    						class="message"
+    						id="message"
+    						name="message"
+    						placeholder="Your message..."
+    						cols="30"
+    						rows="5"
+    						required></textarea>
+            </div>
+            <input id="submit-btn" type="submit" value="Send">
         </form>
     		</div>
     	</section>
     <!--Footer Section-->
     <div class="footer">
         <div class="container">
-            <p>Let's be Friends.</p>
+            <p>Connect</p>
             <!-- logos go here -->
+            <div class="contact-logos pull-right">
+
+            </div>
         </div>
     </div>
 
@@ -118,6 +227,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Chart.js script link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.js" type="text/javascript"></script>
+    <!-- Font Awesome script link -->
+    <script src="https://use.fontawesome.com/e071869b3c.js"></script>
     <!-- Personal Javascript File -->
     <script src="./assets/js/script.js"></script>
   </body>

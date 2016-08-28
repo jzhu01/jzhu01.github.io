@@ -114,17 +114,90 @@ html, body {
 .experience {
   background: url("../images/background2.jpg") no-repeat center center;
   background-size: cover;
+  font-family: 'Jaldi', sans-serif;
 }
 
-#skills{
+#skills {
   padding: 5%;
+}
+
+.experience li {
+  font-size: 120%;
+}
+
+.btn p {
+  color: #fff;
+  text-decoration: none;
+  margin: 1%;
+}
+
+.btn:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  outline: 0px;
 }
 
 #contact-section{
   background: url("../images/background3.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
+  text-align: center;
 }
+
+#contact-section input {
+  width: 35%;
+  border-radius: 5px;
+  background-color: #af5e65;
+  border-color: #af5e65;
+  color: #fff;
+  margin: 5% 2%;
+  padding: 1%;
+  box-shadow: none;
+}
+
+#left {
+  margin-right: 5%;
+}
+
+#contact-section textarea {
+  width: 75%;
+  border-radius: 5px;
+  background-color: #af5e65;
+  border-color: #af5e65;
+  color: #fff;
+  margin: 2% 0%;
+  padding: 1%;
+}
+
+#submit-btn {
+  font-size: 18px;
+}
+
+/* changing the placeholder font color */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    font-size: 18px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+   font-size: 18px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+   font-size: 18px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+   font-size: 18px;
+}
+
+.footer {
+  background: url("../images/background4.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 502px){
   .main .container {
     top: 10%;
