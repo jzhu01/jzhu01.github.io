@@ -1,0 +1,138 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Jaldi', sans-serif;
+font-family: 'Satisfy', cursive;
+*/
+html, body {
+  margin: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* Main Section Styling */
+.main .container {
+  position: relative;
+  top: 30%;
+}
+.main {
+  text-align: center;
+  background: url("../images/Poly-Lakeside.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  /*color: #fff;*/
+  color: #001133;
+  font-size: 150px;
+}
+
+.main h2 {
+  font-family: 'Jaldi', sans-serif;
+  color: #001133;
+}
+
+.main .btn {
+  margin-top: 15%;
+  font-size: 35px;
+  font-family: 'Jaldi', sans-serif;
+  color: white;
+  /*color: #001133;*/
+  text-decoration: none;
+}
+
+.main .btn:hover {
+  border-bottom: 1px solid #fff;
+  outline: 0px;
+}
+
+/* About Section Styling */
+.section-title {
+  border-bottom: 1px solid #b2b2b2;
+  position: relative;
+  color: #b2b2b2;
+  text-align: center;
+  margin: 0% 10%;
+}
+
+.section-title a {
+  text-decoration: none;
+}
+
+.section-title a h2 {
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Jaldi', sans-serif;
+  padding-bottom: 2%;
+}
+
+.jumbotron {
+  padding: 30px;
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  /*height: 100vh;*/
+  color: #fff;
+  margin:0;
+}
+
+.jumbotron h5 {
+  font-size: 140%;
+  text-align: center;
+  margin-top: 5%;
+  font-family:
+}
+
+.jumbotron .col-md-6 p {
+  /*margin-top: 5%;*/
+  font-size: 18px;
+  margin: 5%;
+}
+
+/*.contact-container{
+  text-align:center;
+}*/
+
+.contactbox {
+  background-color: #28223e;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 5px;
+  text-align:center;
+  font-family: 'Jaldi', sans-serif;
+}
+
+.contactbox a {
+  color: #9c596a;
+  font-family: 'Satisfy', cursive;
+  font-size: 120%;
+}
+
+.experience {
+  background: url("../images/background2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#skills{
+  padding: 5%;
+}
+
+#contact-section{
+  background: url("../images/background3.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+@media screen and (max-width: 502px){
+  .main .container {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .main .container {
+    top: 3%;
+  }
+}
