@@ -50,4 +50,14 @@ var myBarChart = new Chart(ctx, {
                 }]
             }
         }
-    }).Bar(barChartData, { scaleFontColor: "#fff" });;
+    });
+
+/* Jquery to make the nav bar more intuitive */
+$(document).ready( function() {
+    var topOfOthDiv = $(".about-section").offset().top;
+    $(window).scroll(function() {
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $(".header").removeClass(".hidden"); //reached the desired point -- show div
+        }
+    });
+});

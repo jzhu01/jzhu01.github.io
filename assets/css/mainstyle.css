@@ -12,6 +12,44 @@ html, body {
   margin: 0 auto;
 }
 
+/* header styling */
+.header {
+  background-color: #232645;
+  color: #fff;
+  padding: 1%;
+  font-family: 'Roboto Condensed', sans-serif;
+  top:0;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav bar Styling */
+.nav-pills {
+  float:right;
+}
+
+.nav-pills li a {
+  color: #fff;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 100px;
+}
+
+.nav-pills li.active a:hover {
+  background-color: #9c596a;
+}
+
+.nav-pills li.active a,
+.nav-pills li a:hover {
+    background-color: #9c596a;
+    box-shadow: 0 2px 4px rgba(156, 89, 106, .5);
+    color: #fff;
+}
+
 /* Main Section Styling */
 .main .container {
   position: relative;
@@ -129,6 +167,7 @@ html, body {
   color: #fff;
   text-decoration: none;
   margin: 1%;
+
 }
 
 .btn:hover {
@@ -173,6 +212,24 @@ html, body {
   font-size: 18px;
 }
 
+.footer p {
+  width: 30%;
+  font-size: 18px;
+  color: #fff
+}
+
+.contact-logos a {
+  margin: 1%;
+  color: #fff;
+}
+
+.contact-logos a:hover {
+  color: #232645;
+}
+
+.contact-logos {
+  padding-bottom: 2%;
+}
 /* changing the placeholder font color */
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;

@@ -19,17 +19,17 @@
   </head>
   <body>
     <!--navigation section-->
-    <div class="header">
+    <div class="header navbar-fixed-top">
       <div class="container">
           <div class="row">
               <div class="col-md-4">
                   <h1>Jen Zhu</h1>
               </div>
               <ul class="nav nav-pills">
-                  <li class="active"><a href="#about">About</a></li>
+                  <li><a href="#about">About</a></li>
                   <li><a href="#experience">Experience</a></li>
-                  <li><a href="#">Résumé</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#resume">Résumé</a></li>
+                  <li><a href="#contact">Contact</a></li>
               </ul>
           </div>
       </div>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <!--About Section -->
-    <div class="jumbotron">
+    <div class="jumbotron about-section">
         <div class="container">
           <div class="section-title">
             <a name="about"><h2>About</h2></a>
@@ -86,6 +86,7 @@
             <!-- Simple graph display of skills using Chart.js -->
             <canvas id="skills" width="500px" height="350px"></canvas>
           </div>
+          <a name="resume"></a>
           <div class="row">
             <div class="col-md-3">
               <h3>Codecademy</h3>
@@ -211,10 +212,12 @@
     <!--Footer Section-->
     <div class="footer">
         <div class="container">
-            <p>Connect</p>
             <!-- logos go here -->
-            <div class="contact-logos pull-right">
-
+            <div class="contact-logos">
+              <a href="./assets/docs/resume.pdf"><i class="fa fa-file-text-o fa-2x right" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/jenniferwzhu"><i class="fa fa-linkedin fa-2x right" aria-hidden="true"></i></a>
+              <a href="https://github.com/jzhu01/"><i class="fa fa-github fa-2x right" aria-hidden="true"></i></a>
+              <a href="mailto:jennifer0zhu@gmail.com" target="none"> <i class="fa fa-paper-plane-o fa-2x right" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
