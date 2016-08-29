@@ -77,5 +77,5 @@ $(document).ready( function() {
   $(".nav-btn").click(function() {
     $(".nav-btn").css('background-color', 'transparent');
     $(this).css('background-color', '#9c596a');
-  })
+  });
 });
