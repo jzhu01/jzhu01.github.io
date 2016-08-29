@@ -23,13 +23,13 @@
       <div class="container">
           <div class="row">
               <div class="col-md-4">
-                  <h1>Jen Zhu</h1>
+                  <a href="https://jzhu01.github.io"><h1>Jen Zhu</h1></a>
               </div>
               <ul class="nav nav-pills">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#experience">Experience</a></li>
-                  <li><a href="#resume">Résumé</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about" class="abt-btn nav-btn">About</a></li>
+                  <li><a href="#experience" class="nav-btn"id="experience-btn">Experience</a></li>
+                  <li><a href="#resume" class="nav-btn"id="resume-btn">Résumé</a></li>
+                  <li><a href="#contact" class="contact-btn nav-btn">Contact</a></li>
               </ul>
           </div>
       </div>
@@ -39,14 +39,15 @@
       <div class="container">
         <h1>Jen Zhu</h1>
         <h2>Innovator + Programmer</h2>
-        <a href="#about" class="btn">Start</a>
+        <p class="btn abt-btn">Start</p>
       </div>
     </div>
     <!--About Section -->
     <div class="jumbotron about-section">
         <div class="container">
           <div class="section-title">
-            <a name="about"><h2>About</h2></a>
+            <!-- <a name="about"><h2>About</h2></a> -->
+            <h2> About </h2>
           </div>
           <strong><h5>I bring ideas to life.</h5></strong>
           <div class="row">
@@ -66,7 +67,7 @@
           <div class="row" style="display:inline;">
             <div class="contact-container">
               <div class="contactbox col-md-5">
-                <h3>Want to get in touch? Make my day by <a href="#contact">sending me a message</a>!<h3>
+                <h3>Want to get in touch? Make my day by <span class="contact-btn">sending me a message</a>!<h3>
               </div>
             </div>
             <div class="redpanda pull-right col-md-3">
@@ -80,13 +81,14 @@
     <div class="jumbotron experience">
         <div class="container">
           <div class="section-title">
-            <a name="experience"><h2>Experience</h2></a>
+            <h2>Experience</h2>
+            <!-- <a name="experience"><h2>Experience</h2></a> -->
           </div>
           <div class="row">
             <!-- Simple graph display of skills using Chart.js -->
             <canvas id="skills" width="500px" height="350px"></canvas>
           </div>
-          <a name="resume"></a>
+          <div class="resume">
           <div class="row">
             <div class="col-md-3">
               <h3>Codecademy</h3>
@@ -176,6 +178,7 @@
               </ul>
             </div>
           </div>
+        </div>
           <div class="row">
             <h3>Want to see more of my work?</h3>
             <a href="#" class="btn"><p>Take a look at my Resume</p></a>

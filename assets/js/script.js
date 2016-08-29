@@ -54,10 +54,28 @@ var myBarChart = new Chart(ctx, {
 
 /* Jquery to make the nav bar more intuitive */
 $(document).ready( function() {
-    var topOfOthDiv = $(".about-section").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $(".header").removeClass(".hidden"); //reached the desired point -- show div
-        }
-    });
+  $(".abt-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".about-section").offset().top
+      }, 1000);
+  });
+  $("#experience-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".experience").offset().top
+      }, 1000);
+  });
+  $("#resume-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".resume").offset().top
+      }, 1000);
+  });
+  $(".contact-btn").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#contact-section").offset().top
+      }, 1000);
+  });
+  $(".nav-btn").click(function() {
+    $(".nav-btn").css('background-color', 'transparent');
+    $(this).css('background-color', '#9c596a');
+  })
 });

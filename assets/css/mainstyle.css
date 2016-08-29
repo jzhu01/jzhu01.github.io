@@ -18,12 +18,18 @@ html, body {
   color: #fff;
   padding: 1%;
   font-family: 'Roboto Condensed', sans-serif;
-  top:0;
 }
 
-.header h1 {
+.header a h1 {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header a h1:hover {
+  color: #fff;
+  text-decoration:none;
 }
 
 /* Nav bar Styling */
@@ -46,7 +52,7 @@ html, body {
 .nav-pills li.active a,
 .nav-pills li a:hover {
     background-color: #9c596a;
-    box-shadow: 0 2px 4px rgba(156, 89, 106, .5);
+    /*box-shadow: 0 2px 4px rgba(156, 89, 106, .5);*/
     color: #fff;
 }
 
@@ -97,11 +103,7 @@ html, body {
   margin: 0% 10%;
 }
 
-.section-title a {
-  text-decoration: none;
-}
-
-.section-title a h2 {
+.section-title h2 {
   color: #fff;
   font-size: 35px;
   font-family: 'Jaldi', sans-serif;
@@ -143,7 +145,7 @@ html, body {
   font-family: 'Jaldi', sans-serif;
 }
 
-.contactbox a {
+.contactbox span {
   color: #9c596a;
   font-family: 'Satisfy', cursive;
   font-size: 120%;
