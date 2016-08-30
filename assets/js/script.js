@@ -54,6 +54,40 @@ var myBarChart = new Chart(ctx, {
 
 /* Jquery to make the nav bar more intuitive */
 $(document).ready( function() {
+  /* Code to make nav bar appear after scrolling to a certain section */
+  window.addEventListener("scroll",function() {
+    var scrollPastPoint = $(".about-section").offset().top - 20;
+    var header = document.getElementById("header");
+     if(window.scrollY > scrollPastPoint) {
+        header.style.visibility = "visible";
+        $(".nav-btn").css('background-color', 'transparent');
+        $("#nav-abt").css('background-color',  '#9c596a');
+     }
+     else {
+        header.style.visibility = "hidden";
+     }
+   },false);
+  /* Code to make each button highlight as a section is reached,
+  brute force code at the moment */
+  window.addEventListener("scroll", function() {
+    var scrollPastPoint_experience = $(".experience").offset().top - 20;
+    var scrollPastPoint_resume = $(".resume").offset().top - 20;
+    var scrollPastPoint_contact = $("#contact-section").offset().top - 20;
+    if (window.scrollY > scrollPastPoint_experience) {
+      $(".nav-btn").css('background-color', 'transparent');
+      $("#experience-btn").css('background-color', '#9c596a');
+    }
+    if (window.scrollY > scrollPastPoint_resume){
+      $(".nav-btn").css('background-color', 'transparent');
+      $("#resume-btn").css('background-color', '#9c596a');
+    }
+    if (window.scrollY > scrollPastPoint_contact) {
+      $(".nav-btn").css('background-color', 'transparent');
+      $("#nav-contact").css('background-color', '#9c596a');
+    }
+  }, false);
+  
+  /* Jquery to make the nav bar more intuitive */
   $(".abt-btn").click(function() {
       $('html, body').animate({
           scrollTop: $(".about-section").offset().top
@@ -79,14 +113,4 @@ $(document).ready( function() {
     $(this).css('background-color', '#9c596a');
   });
 
-  window.addEventListener("scroll",function() {
-    var scrollPastPoint = $(".about-section").offset().top - 20;
-    var header = document.getElementById("header");
-     if(window.scrollY > scrollPastPoint) {
-        header.style.visibility = "visible";
-     }
-     else {
-        header.style.visibility = "hidden";
-     }
-   },false);
 });
