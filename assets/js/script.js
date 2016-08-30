@@ -78,4 +78,15 @@ $(document).ready( function() {
     $(".nav-btn").css('background-color', 'transparent');
     $(this).css('background-color', '#9c596a');
   });
+
+  window.addEventListener("scroll",function() {
+    var scrollPastPoint = $(".about-section").offset().top - 20;
+    var header = document.getElementById("header");
+     if(window.scrollY > scrollPastPoint) {
+        header.style.visibility = "visible";
+     }
+     else {
+        header.style.visibility = "hidden";
+     }
+   },false);
 });

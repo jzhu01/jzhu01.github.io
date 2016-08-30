@@ -13,21 +13,22 @@ html, body {
 }
 
 /* header styling */
-.header {
+#header {
   background-color: #232645;
   color: #fff;
   padding: 1%;
   font-family: 'Roboto Condensed', sans-serif;
+  visibility: hidden;
 }
 
-.header a h1 {
+#header a h1 {
   margin: 0;
   padding: 0;
   text-decoration: none;
   color: #fff;
 }
 
-.header a h1:hover {
+#header a h1:hover {
   color: #fff;
   text-decoration:none;
 }
@@ -101,6 +102,7 @@ html, body {
   color: #b2b2b2;
   text-align: center;
   margin: 0% 10%;
+  padding-top: 4%;
 }
 
 .section-title h2 {
@@ -149,6 +151,8 @@ html, body {
   color: #9c596a;
   font-family: 'Satisfy', cursive;
   font-size: 120%;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .experience {
@@ -165,23 +169,36 @@ html, body {
   font-size: 120%;
 }
 
+.experience a h3 {
+  color: #fff;
+  /*text-decoration: underline;*/
+  font-family: 'Satisfy', cursive;
+}
+
+.resume {
+  padding-top: 7%;
+}
+
 .btn p {
   color: #fff;
   text-decoration: none;
   margin: 1%;
-
+  padding: 5%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: 'Jaldi', sans-serif;
 }
 
-.btn:hover {
+/*.btn:hover {
   color: #fff;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   outline: 0px;
 }
-
+*/
 #contact-section{
   background: url("../images/background3.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  /*height: 100vh;*/
   text-align: center;
 }
 
@@ -211,7 +228,8 @@ html, body {
 }
 
 #submit-btn {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Satisfy', cursive;
 }
 
 .footer p {
